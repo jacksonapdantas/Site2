@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Jackson Dantas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Css do bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!--Navbar-->
+            <nav class="navbar navbar-default navbar-fixed-top nav-background">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img class="brand-size" alt="Brand" src="img/logo.png">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav navbar-nav" id="navbar">
+                            <li class="active" role="presentation"><a href="#">Home</a></li>
+                            <li role="presentation"><a href="#">Sobre</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Utilitários <span class="caret"></span>
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="GeraCpf.html">Gerador de CPF</a></li>
+                                    <li><a href="GeraCnpj.html">Gerador de CNPJ</a></li>
+                                    <li><a href="#">Teste 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fim da navbar-->
+
+            <!--Jumbotron-->
+            <div class="jumbotron align_text">
+                <div class="container">
+                    <h2>Gerador de CNPJ</h2>
+                </div>
+                <div id="push"></div>
+            </div>
+            <!-- Fim do Jumbotron-->
+
+            <!--Sessão para gera CPF-->
+            <section>
+                <div class="container align_text">
+                    <form>
+                        <textarea id="textarea" rows="100" cols="1" class="textarea-size"></textarea>
+                        <div class="row">
+                            <div class="col-lg-4">
+
+                            </div>
+                            <div class="col-lg-4 centro">
+                                <div class="input-group">
+                                    <input id="quantidade_cnpj" type="text" class="form-control" placeholder="Quantos CNPJs?">
+                                    <span class="input-group-btn">
+                                            <button id="copiar" class="btn btn-default" type="button" onclick="copiar_texto()">Copiar</button>
+                                    </span>
+                                    <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" onclick="geraCNPJ()">Gerar</button>
+                                    </span>
+                                </div>
+                                <!-- /input-group -->
+                            </div>
+                            <div class="col-lg-4">
+
+                            </div>
+                            <!-- /.col-lg-6 -->
+                        </div>
+                        <!-- /.row -->
+                    </form>
+                </div>
+
+
+            </section>
+
+            <!-- Rodapé-->
+            <footer class="footer ">
+                <div class="container ">
+                    <p class="text-muted ">By:<a href="http://jacksondantas.somee.com" target="_blank">Jackson Dantas</a></p>
+                </div>
+                <div id="push"></div>
+            </footer>
+        </div>
+        <!-- jquery - Plugin necessário para funcionamento de alguns componets do bootstrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Javascript do Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Javascript funcionalidades-->
+        <script src="js/javascript.js"></script>
+    </body>
+
+</html>
